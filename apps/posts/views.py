@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from apps.posts.models import Post, TeamMember, Courses, Front, Back
+from apps.posts.models import Post, TeamMember, Courses, Front, Back, Ux_ui, Android
 
 class IndexView(generic.ListView):
     # model = Post
@@ -26,5 +26,15 @@ class FrontView(generic.ListView):
 class BakcView(generic.ListView):
     queryset = Back.objects.all()
     template_name = 'backend.html'
+    context_object_name = "posts"
+
+class Ux_uiView(generic.ListView):
+    queryset = Ux_ui.objects.all()
+    template_name = 'ux_ui.html'
+    context_object_name = "posts"
+
+class AndroidView(generic.ListView):
+    queryset = Android.objects.all()
+    template_name = 'android.html'
     context_object_name = "posts"
 

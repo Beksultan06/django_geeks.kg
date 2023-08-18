@@ -99,4 +99,30 @@ class Back(models.Model):
     class Meta:
         verbose_name = "Информация" 
         verbose_name_plural = "Информации"   
+
+
+class Ux_ui(models.Model):
+    ux_ui = models.TextField(
+        verbose_name="Информация о UX/UI Разработке"
+    )
+
+    def __str__(self):
+        return self.ux_ui
+    
+    class Meta:
+        verbose_name = "Информация" 
+        verbose_name_plural = "Информации"   
+
+
+class Android(models.Model):
+    android = models.TextField(
+        verbose_name="Информация о Android Разработке"
+    )
+
+    def __str__(self):
+        return self.android
+    
+    class Meta:
+        verbose_name = "Информация" 
+        verbose_name_plural = "Информации"   
     
