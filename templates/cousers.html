@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список курсов</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #35424a;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .block {
+        width: 450px;
+        text-align: center;
+      }
+      h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+        color: blue;
+      }
+      p{
+        color: teal;
+      }
+     img {
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .3s all linear;
+     }
+     img:hover {
+        transform: translate(-20px, -20px);
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Список курсов</h1>
+    </header>
+
+    <div class="container">
+      <div class="block">
+        <div>
+          <h2>Back - End</h2>
+       <a href={% url 'back' %}>  <img src="../static/b32ceddf-c070-43dd-96ac-2a98b73cc3a4.jpg" width="400px" /></a> 
+          <p>Длительность: 2 часов</p>
+        </div>
+
+        <div>
+          <h2>Android</h2>
+          <img src="../static/3099071b-ea50-4dad-81b7-6219221b5143.ipg.webp" width="400px" />
+          <p>Длительность: 2 часов</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div>
+          <h2>UX/UI</h2>
+          <img src="../static/e6c1321d-8a1f-4edc-b9c9-f0ccecc6830b.jpg" width="400px" />
+          <p>Длительность: 2 часов</p>
+        </div>
+
+        <div>
+          <h2>Front - End</h2>
+          <a href={% url 'front' %}>   <img src="../static/4.jpg" width="400px" /></a>
+          <p>Длительность: 2 часов</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
