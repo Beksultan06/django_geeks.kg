@@ -1,5 +1,5 @@
 from django.urls import path
-from apps.posts.views import IndexView, AboutView, CousersView, FrontView, BakcView, Ux_uiView, AndroidView
+from apps.posts.views import IndexView, AboutView, CousersView, FrontView, BakcView, Ux_uiView, AndroidView, BenefistView
 
 
 urlpatterns = [
@@ -10,5 +10,5 @@ urlpatterns = [
     path('back/', BakcView.as_view(), name='back'),
     path('ux_ui/', Ux_uiView.as_view(), name='ux_ui'),
     path('android/', AndroidView.as_view(), name='android'),
-
+    path('bene/', BenefistView.as_view(), name='benefist'),
 ]
