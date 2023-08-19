@@ -18,7 +18,7 @@ class Post(models.Model):
     )
     cover = models.ImageField(
         default="image.jpg",
-        upload_to="upload/posts",
+        upload_to="static",
         blank=True,
         verbose_name="Обложка"
     )
@@ -42,7 +42,7 @@ class TeamMember(models.Model):
     )
     image = models.ImageField(
         default="image.jpg",
-        upload_to="upload/posts",
+        upload_to="static",
         blank=True,
         verbose_name="Обложка"
     )
