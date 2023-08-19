@@ -1,21 +1,66 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Parcel</title>
-    <link rel="stylesheet" href="scss/styles.scss">
-    <script type="module" src="index"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Привет, я из Geeks!</h1>
-      <button class="btn btn-primary">Primary button</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
+  .container {
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
 
-        <a href="{% url 'about' %}">О нас</a><br>
-        <a href="{% url 'cousers' %}">Курсы</a><br>
-        <a href="{% url 'benefist' %}">ПРеимущество</a><br>
-    </div>
-  </body>
+  .image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Главная страница</h1>
+  
+  <div class="image-container">
+    <img class="image" src="../static/22.jpg" alt="Фото 1" style="width: 400px;height: 300px; object-fit: cover  ;max-width: 10000px;" >
+    <p>КУРСЫ ПРОГРАММИРОВАНИЯ БИШКЕК</p>
+    <p class="text">
+      Образовательный центр Geeks (Гикс) был основан Fullstack-разработчиком Айдаром Бакировым и Android-разработчиком Нургазы Сулаймановым в 2018-ом году в Бишкеке с целью дать возможность каждому человеку,
+      даже без опыта в технологиях, гарантированно освоить IT-профессию. В данный момент более 1200 студентов в возрасте от 12 до 45 лет изучают здесь программирование,
+      дизайн и английский язык. Филиальная сеть образовательного центра представлена в таких городах, как Бишкек, Ош и Кара-Балта. 1.</p>
+  </div>
+
+  <div class="image-container">
+    <img class="image" src="../static/11.jpg" alt="Фото 2">
+    <p>РАБОТАЙТЕ НА ФРИЛАНСЕ</p>
+    <p class="text">
+      Работайте удалённо, принимая заказы из других стран. Высокий доход, свободный график и никакого начальника..</p>
+  </div>
+  
+  
+  <!-- Добавьте больше блоков image-container по необходимости -->
+</div>
+</body>
 </html>
