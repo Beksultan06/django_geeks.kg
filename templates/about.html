@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Красивый шаблон</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, black 50%, yellow 50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>О нас</h1>
-    </header>
-    <section>
-        <h2>Наша История</h2>
-        <p>Добро пожаловать на наш веб-сайт! Мы начали с мечты о революции в отрасли, и благодаря упорному труду и преданности, мы превратили эту мечту в реальность.</p>
-    </section>
-    <section>
-        <h2>Наша Команда</h2>
-        <div class="team-member">
-            <img src="../static/1.jpg" alt="Участник Команды 1">
-            <p>Сооснователь и Генеральный Директор</p>
-        </div>
-        <div class="team-member">
-            <img src="team_member2.jpg" alt="Участник Команды 2">
-            <h3>Нурлан уулу Бексултан</h3>
-            <p>Креативный Директор</p>
-        </div>
-    </section>
-    <section>
-        <h2>Наша Миссия</h2>
-        <p>Мы на миссии переопределения превосходства в нашей области. Через инновации, творчество и стремление к качеству, мы повышаем планку и превосходим ожидания.</p>
-    </section>
-    <footer>
-        <p>&copy; 2023 ВашаКомпания. Все права защищены.</p>
-    </footer>
+<div class="container">
+  <h1>Привет, мир!</h1>
+  <p>Добро пожаловать на наш веб-сайт. Здесь можно добавить фото и текст.</p>
+</div>
+
+<div class="container">
+  <h2>Наши фотографии</h2>
+  
+  <div class="image-container">
+    <img class="image" src="image1.jpg" alt="Фото 1">
+    <p class="text">Текст под фото 1.</p>
+  </div>
+
+  <div class="image-container">
+    <img class="image" src="image2.jpg" alt="Фото 2">
+    <p class="text">Текст под фото 2.</p>
+  </div>
+  
+
+</div>
 </body>
 </html>
-
