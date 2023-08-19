@@ -18,7 +18,9 @@ class CoursesAdmin(admin.ModelAdmin):
 
 @admin.register(Benefist)
 class BenefistAdmin(admin.ModelAdmin):
-    list_display = ["povtor", "main"]
+    list_display = ["povtor", "image"]
+
+
 
     
 

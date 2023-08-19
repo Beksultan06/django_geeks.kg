@@ -134,6 +134,10 @@ class Benefist(models.Model):
     main = models.TextField(
         verbose_name="Главный плюс"
     )
+    image = models.ImageField(
+        upload_to=True,
+        verbose_name="Фотография преимущество"
+    )
 
     def __str__(self):
         return self.main
