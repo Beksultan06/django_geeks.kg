@@ -84,12 +84,12 @@ class Front(models.Model):
         return self.android
 
     class Meta:
-        verbose_name = "Информация" 
-        verbose_name_plural = "Информации"      
+        verbose_name = "Информация о Фронтенд" 
+        verbose_name_plural = "Информации о Фронтенд"      
 
 
 class Back(models.Model):
-    bakc = models.TextField(
+    back = models.TextField(
         verbose_name="Информация о Back-End Разработке"
     )
 
@@ -97,8 +97,8 @@ class Back(models.Model):
         return self.bakc
     
     class Meta:
-        verbose_name = "Информация" 
-        verbose_name_plural = "Информации"   
+        verbose_name = "Информация о Бэкенд" 
+        verbose_name_plural = "Информации о Бэкенд"   
 
 
 class Ux_ui(models.Model):
@@ -110,8 +110,8 @@ class Ux_ui(models.Model):
         return self.ux_ui
     
     class Meta:
-        verbose_name = "Информация" 
-        verbose_name_plural = "Информации"   
+        verbose_name = "Информация о Дизайн" 
+        verbose_name_plural = "Информации о Дизайн"   
 
 
 class Android(models.Model):
@@ -123,6 +123,22 @@ class Android(models.Model):
         return self.android
     
     class Meta:
-        verbose_name = "Информация" 
-        verbose_name_plural = "Информации"   
+        verbose_name = "Информация о Андройд" 
+        verbose_name_plural = "Информации о Андройд"   
     
+
+class Benefist(models.Model):
+    povtor = models.TextField(
+        verbose_name="Повторное обучение"
+    )
+    main = models.TextField(
+        verbose_name="Главный плюс"
+    )
+
+    def __str__(self):
+        return self.main
+    
+    class Meta:
+        verbose_name = "Преимущество"
+        verbose_name_plural = "Преимущества"
+
