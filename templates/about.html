@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Красивый шаблон</title>
+<title>about_me</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -38,28 +38,50 @@
   .text {
     margin-top: 10px;
   }
+
+  .comment-container {
+    margin-top: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Привет, мир!</h1>
-  <p>Добро пожаловать на наш веб-сайт. Здесь можно добавить фото и текст.</p>
+  <h1>Привет, Я из Geeks</h1>
+  <p>Немного о нас.</p>
 </div>
 
 <div class="container">
   <h2>Наши фотографии</h2>
   
   <div class="image-container">
-    <img class="image" src="image1.jpg" alt="Фото 1">
-    <p class="text">Текст под фото 1.</p>
+    <img class="image" src="../static/11.jpg" alt="Фото 1">
+    <p class="text">Образовательный центр Geeks (Гикс) был основан Fullstack-разработчиком Айдаром Бакировым и Android-разработчиком
+         Нургазы Сулаймановым в 2018-ом году в Бишкеке с целью дать возможность каждому человеку,
+         даже без опыта в технологиях, гарантированно освоить IT-профессию..</p>
   </div>
 
   <div class="image-container">
-    <img class="image" src="image2.jpg" alt="Фото 2">
-    <p class="text">Текст под фото 2.</p>
+    <img class="image" src="../static/13.jpg" alt="Фото 2">
+    <p class="text">На сегодняшний день более 1200 студентов в возрасте от 12 до 45 лет изучают здесь самые популярные и востребованные IT-профессии. 
+        Филиальная сеть образовательного центра представлена в таких городах, как Бишкек, Ош и Кара-Балта.</p>
   </div>
-  
 
+</div>
+
+<div class="container comment-container">
+  <h2>Комментарии</h2>
+  <form>
+    <textarea placeholder="Оставьте свой комментарий здесь" rows="4"></textarea>
+    <button type="submit">Отправить комментарий</button>
+  </form>
 </div>
 </body>
 </html>
