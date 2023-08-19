@@ -7,12 +7,23 @@
     <title>Benefits Page</title>
     <style>
         /* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
 
 .benefits-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .benefit {
@@ -21,6 +32,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: aqua;
 }
 
 .benefit img {
@@ -42,9 +54,9 @@
 <body>
     <div class="benefits-container">
         <div class="benefit">
-            <img src="benefit1.jpg" alt="Benefit 1">
+            <img src="../static/1_9UPS0FA.jpg" alt="Benefit 1" style="width: 400px;height: 300px; object-fit: cover  ;max-width: 10000px;"  >
             <h3>Benefit 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Вы получите занние по тем по что вы выбрали.</p>
         </div>
         <div class="benefit">
             <img src="benefit2.jpg" alt="Benefit 2">

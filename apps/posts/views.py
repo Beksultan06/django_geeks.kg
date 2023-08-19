@@ -41,8 +41,8 @@ class AndroidView(generic.ListView):
 
 class BenefistView(generic.ListView):
     queryset = Benefist.objects.all()
-    template_name = 'benefist.html'
+    template_name = 'benefits.html'
     context_object_name = 'posts'
 
-    
+
 
